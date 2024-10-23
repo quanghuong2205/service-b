@@ -9,19 +9,16 @@
 
 <script>
   window.onload = () => {
-    const iframe = document.querySelector("iframe");
-    iframe.onload = () => {
-      window.addEventListener(
-        "message",
-        (event) => {
-          console.log({
-            origin: event.origin,
-            data: event.data,
-          })
-        },
-        false,
-      );
-    }
+    window.addEventListener(
+      "message",
+      (event) => {
+        console.log({
+          origin: event.origin,
+          data: event.data,
+        })
+      },
+      false,
+    );
 
   }
 </script>
