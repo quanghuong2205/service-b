@@ -5,7 +5,11 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors https://service-a-two.vercel.app"
+          "value": "frame-ancestors https://service-a-two.vercel.app; script-src 'self' https://service-a-two.vercel.app;"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://service-a-two.vercel.app"
         }
       ]
     }
