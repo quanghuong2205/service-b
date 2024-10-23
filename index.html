@@ -9,13 +9,17 @@
 
 <script>
   window.onload = () => {
-    window.addEventListener(
-      "message",
-      (event) => {
-        console.log(event)
-      },
-      false,
-    );
+    const iframe = document.querySelector("iframe");
+    iframe.onload = () => {
+      window.addEventListener(
+        "message",
+        (event) => {
+          console.log(event)
+        },
+        false,
+      );
+    }
+
   }
 </script>
 
