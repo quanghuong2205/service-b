@@ -12,10 +12,9 @@
     window.addEventListener(
       "message",
       (event) => {
-        console.log({
-          origin: event.origin,
-          data: event.data,
-        })
+        if (event.origin === "https://service-a-two.vercel.app") {
+          console.log(event)
+        }
       },
       false,
     );
