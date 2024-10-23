@@ -14,7 +14,10 @@
       window.addEventListener(
         "message",
         (event) => {
-          console.log(event)
+          console.log({
+            origin: event.origin,
+            data: event.data,
+          })
         },
         false,
       );
