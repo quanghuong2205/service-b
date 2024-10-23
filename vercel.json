@@ -1,11 +1,11 @@
-{
+={
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors https://service-a-two.vercel.app; script-src 'self' https://service-a-two.vercel.app;"
+          "value": "frame-ancestors https://service-a-two.vercel.app; script-src 'self' https://service-a-two.vercel.app https://vercel.live 'unsafe-inline';"
         },
         {
           "key": "Access-Control-Allow-Origin",
